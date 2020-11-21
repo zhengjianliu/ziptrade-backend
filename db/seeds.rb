@@ -21,6 +21,17 @@ jay = User.create(
     email: 'comezheng@gmail.com'
 )
 
+shawn = User.create(
+    username: 'shawn',
+    fullname: 'shawn wong',
+    password: '4214',
+    address: '2321 23t213kjfsbqbfiqbibfqwf ',
+    zipcode: '11369',
+    city: 'queens',
+    phone: '9173530171',
+    email: 'comezheng@gmail.com'
+)
+
 item = Item.create(
     ownerId: jay.id,
     images: [],
@@ -29,7 +40,39 @@ item = Item.create(
     condition: 'new'
 )
 
-favor = Favorite.create(
+itemtwo = Item.create(
+    ownerId: jay.id,
+    images: [],
+    price: '999',
+    description: 'apple iphone',
+    condition: 'mint'
+)
+
+
+itemthree = Item.create(
+    ownerId: shawn.id,
+    images: [],
+    price: '999',
+    description: 'apple iphone',
+    condition: 'mint'
+)
+
+Favorite.create(
     user: jay,
+    item: item
+)
+
+Favorite.create(
+    user: jay,
+    item: itemthree
+)
+
+Favorite.create(
+    user: jay,
+    item: itemtwo
+)
+
+Favorite.create(
+    user: shawn,
     item: item
 )
