@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :zipcode
       t.string :city
       t.string :phone
-      t.string :displayphone, default: true
+      t.boolean :displayphone, default: true
       t.string :email
 
       t.timestamps

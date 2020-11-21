@@ -27,11 +27,13 @@ ActiveRecord::Schema.define(version: 2020_11_18_032919) do
   create_table "items", force: :cascade do |t|
     t.integer "ownerId"
     t.text "images", default: [], array: true
+    t.string "name"
+    t.string "category"
     t.string "price"
     t.string "description"
     t.string "condition"
-    t.string "available", default: "t"
-    t.string "visiable", default: "t"
+    t.boolean "available", default: true
+    t.boolean "visiable", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -44,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_11_18_032919) do
     t.string "zipcode"
     t.string "city"
     t.string "phone"
-    t.string "displayphone", default: "t"
+    t.boolean "displayphone", default: true
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
