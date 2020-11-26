@@ -8,9 +8,15 @@ class UserSerializer < ActiveModel::Serializer
   end
 
   def favorites
-    Favorite.all.filter do |favorite|
-      favorite.user.id === self.object.id
+    self.object.favorites.map do |favorite|
+      Item.all.find(favorite.item_id)
+
     end
   end
 
+  # def favorites
+  #   Favorite.all.filter do |favorite|
+  #     favorite.user_id === self.object.id
+  #   end
+  # end
 end
