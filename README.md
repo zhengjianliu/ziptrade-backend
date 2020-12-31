@@ -1,24 +1,18 @@
-# README
+<h1 align="center" color="lightgrey">Welcome to Zip Trade</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+> A React / Redux / Ruby on Rails marketing web application
 
-* Ruby version
+### 🏠 [LiveDemo](https://ziptrade.netlify.app/) | [Frontend](https://github.com/zhengjianliu/ziptrade-frontend) | [Backend](https://github.com/zhengjianliu/ziptrade-backend)
 
-* System dependencies
+## Author
 
-* Configuration
+👤 **ZHENGJIAN(JAY) LIU**
 
-* Database creation
+-   Github: [@ZHENGJIANLIU](https://github.com/zhengjianliu)
+-   Linkedin [@Linkedin](https://www.linkedin.com/in/zhengjian-jay-liu-33776553/)
+-   Website [@Website](https://www.zhengjianliu.com)
 
-* Database initialization
+## Show your support
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Give a ⭐️ if you like this project!
